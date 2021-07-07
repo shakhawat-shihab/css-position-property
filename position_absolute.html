@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute</title>
+    <style>
+        .swimming div {
+            width: 300px;
+            height: 200px;
+            border: 5px dotted gray;
+        }
+
+        .swimming {
+            position: relative;
+        }
+
+        #ring {
+            position: absolute;
+            top: 80px;
+            right: 20px;
+        }
+
+
+        .another-section div {
+            width: 300px;
+            height: 200px;
+            border: 5px dotted greenyellow;
+        }
+
+        #second {
+            position: absolute;
+            top: 50px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Hello There</h1>
+        <h2>I am practising position Absolute</h2>
+        <p>The element is Positioned relative to the nearest positioned ancestor</p>
+    </section>
+    <hr>
+    <section class="swimming">
+        <div id="boy">
+            <img src="images/boy.svg" alt="">
+        </div>
+        <div id="ring">
+            position:absolute & it got <b>swimming section</b> as the nearest relative container
+            <img src="images/ring.svg" alt="">
+        </div>
+        <div id="water">
+            <img src="images/water.svg" alt="">
+        </div>
+    </section>
+    <hr>
+    <section class="another-section">
+        <div id='first'>
+
+        </div>
+        <div id='second'>
+            position:absolute & it got <b>body</b> as the nearest relative container
+        </div>
+        <div id='third'>
+
+        </div>
+    </section>
+</body>
+
+</html>
